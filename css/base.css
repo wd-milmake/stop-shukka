@@ -20,10 +20,6 @@ body {
   padding-top: 32px;
 }
 
-h1 {
-  color: #ff0000;
-}
-
 ul {
   list-style: none;
 }
@@ -84,7 +80,8 @@ button:active {
 }
 
 .modalWrap {
-  background-color: #f9f8ea;
+  /* background-color: #f9f8ea; */
+  background: repeating-linear-gradient(-45deg, #f9f8ea 0, #f9f8ea 10px, #fff 10px, #fff 20px);
   border-radius: 8px;
   left: 50%;
   max-width: 600px;
@@ -94,6 +91,25 @@ button:active {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
+}
+
+.modalContents {
+  background-color: rgb(255, 255, 255);
+  height: 260px;
+  padding: 16px 24px;
+  width: 100%;
+}
+
+.modalContents h1 {
+  color: #090768;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 8px;
+}
+
+.modalContents p {
+  margin-bottom: 8px;
 }
 
 .closeModal {
@@ -110,4 +126,40 @@ button:active {
   transform: translateX(-50%);
   position: absolute;
   width: 200px;
+}
+
+footer p{
+  font-size: small;
+  padding-top: 32px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 160px;
+  }
+
+  .modalWrap {
+    min-height: 500px;
+    padding: 16px;
+  }
+
+  .modalContents {
+    height: 360px;
+    padding: 8px;
+  }
+
+  .modalContents h1 {
+    font-size: 1.2rem;
+  }
+
+  .modalContents p {
+    font-size: 0.9rem;
+  }
+
+  footer p{
+    font-size: 12px;
+    padding-top: 32px;
+    text-align: center;
+  }
 }
