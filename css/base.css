@@ -55,7 +55,7 @@ button:active {
   border-bottom: none;
 }
 
-.text {
+.info {
   text-align: center;
 }
 
@@ -155,6 +155,10 @@ footer p{
 
   .modalContents p {
     font-size: 0.9rem;
+  }
+
+  .info {
+    font-size: 14px;
   }
 
   footer p{
