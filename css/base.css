@@ -1,0 +1,113 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+body {
+  background: repeating-linear-gradient(-45deg, #f9f8ea 0, #f9f8ea 10px, #fff 10px, #fff 20px);
+  padding-top: 32px;
+}
+
+h1 {
+  color: #ff0000;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: none;
+}
+
+li img {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #f0acbd;
+  border-radius: 40px;
+  border-bottom: solid 4px #f57595;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 80px;
+  letter-spacing: 0.05em;
+  margin: 24px auto;
+  text-align: center;
+  width: 300px;
+}
+
+button:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.text {
+  text-align: center;
+}
+
+.active {
+  display: block;
+}
+
+/* モーダル */
+.modalArea {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.modalBG {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30,30,30,0.9);
+}
+
+.modalWrap {
+  background-color: #f9f8ea;
+  border-radius: 8px;
+  left: 50%;
+  max-width: 600px;
+  min-height: 400px;
+  padding: 24px 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.closeModal {
+  background-color: #f57595;
+  border-radius: 30px;
+  bottom: 24px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.0rem;
+  height: 64px;
+  left: 50%;
+  line-height: 64px;
+  text-align: center;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 200px;
+}
